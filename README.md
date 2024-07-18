@@ -1,5 +1,5 @@
 
-# The Vintage Bar - Test Project
+# The Vintage Bar - Challenge Project
 
 This project is a responsive reproduction of a design provided in Adobe XD, created for The Vintage Bar. The goal was to accurately translate the design into HTML and CSS, ensuring that the project is fully responsive and includes a functional mobile menu.
 
