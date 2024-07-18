@@ -47,7 +47,21 @@ To run this project locally, follow these steps:
 
 ### Desktop View
 
+![Screenshot 2024-07-18 at 15 20 33](https://github.com/user-attachments/assets/305f4b7e-f824-4e0a-abf6-81a4c1eea50b)
+
+![Screenshot 2024-07-18 at 15 20 40](https://github.com/user-attachments/assets/fdcfc235-ff99-422b-aa01-1951c56920b4)
+
+![Screenshot 2024-07-18 at 15 20 45](https://github.com/user-attachments/assets/85c429c0-c0cf-46aa-8cbe-5dba356d68ca)
+
 ### Mobile View
+
+![Screenshot 2024-07-18 at 15 21 09](https://github.com/user-attachments/assets/4ac89369-e84c-46f1-beef-f475dd87f2a3)
+
+![Screenshot 2024-07-18 at 15 21 14](https://github.com/user-attachments/assets/0178d57e-9cb9-4e2c-afd9-32871f81fc55)
+
+![Screenshot 2024-07-18 at 15 21 26](https://github.com/user-attachments/assets/7fff5dd0-de62-4fb5-a397-2800d4baa5cd)
+
+![Screenshot 2024-07-18 at 15 21 41](https://github.com/user-attachments/assets/0435f5e4-72a8-43ad-b743-0bc6cb37073a)
 
 ## Contact
 
