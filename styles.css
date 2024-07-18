@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.cdnfonts.com/css/chronicle-display');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    color: #333;
+}
+
+main {
+    display:flex;
+    flex-direction: column;
+}
+
+.mobileNavBar {
+    width: calc(100% - 2rem); 
+    margin: 1rem 1rem;
+}
+
+hr {
+    width: 15%;
+    border: 1px solid #444444;
+}
+
+.mobileNavBar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.mobileNavBar .icon {
+    position: absolute;
+    left: 0;
+}
+
+.mobileNavBar .logo img {
+    width: 10rem;
+    height: auto;
+    background: transparent url('img/logo-1.png') 0% 0% no-repeat;
+    opacity: 1;
+}
+
+header .deskNavBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.2rem;
+    max-width: 100%;
+    gap: 5em;
+}
+
+
+.tvbLogo {
+    width: 14.25rem;
+    height: auto;
+}
+
+.deskNavItems {
+    display: flex;
+    gap: 1.25rem;
+}
+
+.deskNavItems li {
+    list-style: none;
+    text-align: center;
+    font: bold 0.75rem/1.125rem 'Manrope', sans-serif; 
+    letter-spacing: 0.075rem;
+    color: #000000;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-transform: uppercase;
+}
+
+.deskNavItems li a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    white-space: nowrap; /
+    position: relative; 
+}
+
+.deskNavItems li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.125rem;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    transition: width 0.3s ease;
+}
+
+.deskNavItems li a:hover::after {
+    width: 100%;
+}
+
+
+.callToActionMain {
+    display: flex;
+    flex-direction: column;
+    margin: 0 1rem;
+    margin-top: 3rem;
+}
+
+.callToAction {
+    display: flex;
+    flex-direction: column;
+}
+
+.callToAction p {
+    text-align: left;
+    font: normal normal medium 12px/20px Manrope;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    opacity: 1;
+    margin: 1rem 0;
+}
+
+.callToAction h2 {
+    text-align: left;
+    font: normal normal 100 36px/40px Chronicle Display;
+    letter-spacing: 0px;
+    color: #111111;
+    opacity: 1; 
+    margin: 1rem 0;
+}
+
+.callToAction a {
+    text-align: left;
+    text-decoration: underline;
+    font: normal normal normal 14px/19px Manrope;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    margin: 1rem 0;
+}
+
+.ctaAbout p {
+    width: 100%; 
+    text-align: left;
+    font: normal normal 100 16px/24px Chronicle Display;
+    letter-spacing: 0px;
+    color: #656565;
+    opacity: 1;
+    margin: 1rem 0;
+}
+
+.pricingSection {
+    background: #F1EFEA 0% 0% no-repeat;
+    width: 100%;
+    opacity: 1;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.pricingTitle {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    display:flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.pricingTitle p {
+    font: normal normal 600 12px/20px Manrope;
+    letter-spacing: 3.6px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.pricingTitle h2 {
+    text-align: center;
+    font: normal normal 300 32px/43px Chronicle Display;
+    letter-spacing: 0px;
+    color: #111111;
+    opacity: 1;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    box-shadow: 0px 3px 60px rgba(101, 101, 101, 0.03);
+    width: calc(100% - 2rem);
+    max-width: 384px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 3rem; 
+}
+.card h2 {
+    font: normal normal 600 12px/20px 'Manrope', sans-serif;
+    letter-spacing: 3.6px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.card h3 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 300;
+    font: normal normal 300 32px/43px Chronicle Display;
+    letter-spacing: 0px;
+}
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+.card ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font: normal normal normal 15px/31px 'Chronicle Display', serif; 
+    font-weight: 300; 
+}
+.card ul li::before {
+    content: '✔';
+    color: black;
+    margin-right: 10px;
+}
+.card button {
+    width: 200px; 
+    height: 35px;
+    border-radius: 2px;
+    background-color: #444444;
+    color: white;
+    border: none;
+    font-size: 14px; 
+    cursor: pointer;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card button:hover {
+    background-color: #555;
+    transition: .5s;
+}
+
+
+
+.picSection {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.picSection img {
+    flex-grow: 1;
+    width: auto; 
+    height: auto; 
+    max-width: 50%; 
+    background: transparent url('img/IMG_5980.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin: 0;
+    object-fit: cover; 
+}
+
+.aboutContainer {
+    margin: 0 1rem;
+    padding-bottom: 4rem;
+}
+
+.aboutContainer h2 {
+    padding: 3rem 0 2rem 0;
+    text-align: left;
+    font: normal normal 300 32px/43px Chronicle Display;
+    letter-spacing: 0px;
+    color: #111111;
+    opacity: 1;
+
+}
+
+.aboutContainer div h3 {
+    text-align: left;
+    font: normal normal bold 12px/17px Manrope;
+    margin: 1rem 0;
+    letter-spacing: 1.2px;
+    color: #000000;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.aboutContainer div p {
+    text-align: left;
+    font: normal normal normal 16px/24px Chronicle Display;
+    letter-spacing: 0px;
+    color: #656565;
+    opacity: 1;
+    font-weight: 200
+}
+
+@keyframes slideIn {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+.mobileMenu {
+    display: none; 
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    width: 0; 
+    height: 100%; 
+    background-color: white; 
+    z-index: 1000; 
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: center;
+    color: black;
+    font-family: 'Manrope', sans-serif;
+    overflow: hidden; 
+    transition: width 0.3s ease-in-out;
+}
+
+.mobileMenu.show {
+    display: flex;
+    animation: slideIn 0.3s forwards; 
+    width: 100%;
+}
+
+.mobileMenu.hide {
+    animation: slideOut 0.3s forwards; 
+    width: 0;
+}
+
+.mobileMenuHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    position: relative; 
+}
+
+.mobileMenuHeader img {
+    width: 10rem;
+    height: auto;
+}
+
+.closeIcon {
+    position: absolute;
+    right: 1rem;
+    font-size: 36px;
+    cursor: pointer;
+    color: black;
+}
+
+.mobileMenu ul {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    border-top: 1px solid #EAE8E4;
+    margin-top: 7rem;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+.mobileMenu ul li {
+    margin: 1rem 0;
+    border-bottom: 1px solid #EAE8E4;
+    padding-bottom: 1rem;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.mobileMenu ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex; /* Usar flex para alinhamento */
+    justify-content: space-between; /* Espaça o texto e o ícone de seta */
+    align-items: center; /* Alinha verticalmente */
+    font: normal normal normal 15px/36px Manrope;
+
+}
+
+.mobileMenu ul li::after {
+    content: '>';
+    color: black;
+}
+
+.contactInfo {
+    width: 100%;
+    height: 25%;
+    background-color: #F0EFED;
+    padding: 1rem;
+    text-align: left;
+}
+
+.ctaCall {
+    font: normal normal 600 13px/36px Manrope;
+    color: #444444;
+}
+
+.contactInfo p {
+    margin: 0.5rem 0;
+    font: normal normal normal 13px/18px Manrope;
+    color: #444444;
+}
+
+.contactInfo a {
+    color: black;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    header .deskNavBar {
+        display: none;
+    }
+    .card {
+        padding: 15px;
+    }
+    .card h2 {
+        font-size: 10px; 
+        letter-spacing: 2px; 
+    }
+    .card h3 {
+        font-size: 30px;
+    }
+    .card ul li {
+        margin-bottom: 8px;
+    }
+    .card button {
+        width: 180px; 
+        height: 30px; 
+        bottom: -15px;
+    }
+
+    .cardsContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+/* Styles for Desktop */
+@media (min-width: 768px) {
+    .mobileNavBar {
+        display: none;
+    }
+    
+    .callToActionMain {
+        display: flex;
+        flex-direction: row;
+        margin: 0 1rem;
+        margin-top: 3rem;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        align-self: center;
+    }
+    
+    .callToAction, .ctaAbout {
+        flex: 1;
+        margin: 0 1rem;
+    }
+
+    .pricingSection {
+        flex-direction: col;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .pricingTitle {
+        align-items: center;
+        text-align: left;
+        width: 100%;
+        margin: 3rem 1rem;
+    }
+
+    .cardsContainer {
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .card {
+        margin: 1rem;
+        max-width: 25rem;
+    }
+
+    .picSection {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .picSection img {
+        max-width: 50%;
+    }
+
+    .aboutContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .aboutContainer h2, .aboutContainer div {
+        flex: 1 1 45%;
+        margin: 1rem;
+    }
+
+    .picAboutContainer {
+        display: flex;
+        /* border: 2px solid red; */
+        width: 80%;
+        align-self: center;
+        gap: 3rem;
+        padding: 3rem 0;
+        justify-content: space-between;
+    }
+}

@@ -1,11 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Vintage Box</title>
+    <title>The Vintage Bar</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/chronicle-display" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <nav class="mobileNavBar">
+            <ul>
+                <li class="icon" id="burgerMenu">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect y="4" width="24" height="2" fill="black"/>
+                        <rect y="11" width="24" height="2" fill="black"/>
+                        <rect y="18" width="24" height="2" fill="black"/>
+                    </svg>
+                </li>
+                <li class="logo"><img src="./assets/logo.jpg" alt="Logo"/></li>
+            </ul>
+        </nav>
+        <nav class="deskNavBar">
+            <img class="tvbLogo" src="./assets/logo.jpg"/>
+            <ul class="deskNavItems">
+                <li><a href="#">Platform</a></li>
+                <li><a href="#">TVB Creative</a></li>
+                <li><a href="#">Become a Partner</a></li>
+            </ul>
+        </nav>
+        <div id="mobileMenu" class="mobileMenu">
+            <div class="mobileMenuHeader">
+                <img src="./assets/logo.jpg" alt="Logo"/>
+                <span id="closeMenu" class="closeIcon">&times;</span>
+            </div>
+            <ul>
+                <li><a href="#">Platform</a></li>
+                <li><a href="#">TVB Creative</a></li>
+                <li><a href="#">Become a partner</a></li>
+            </ul>
+            <div class="contactInfo">
+                <p class="ctaCall">CALL US</p>
+                <p>Nicolai Nøhr<br>Head of partnerships</p>
+                <hr>
+                <p>+45 5367 7979<br><a href="mailto:nin@thevintagebar.com">nin@thevintagebar.com</a></p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="callToActionMain">
+            <div class="callToAction">
+                <p>Join the Community</p>
+                <h2>How do I qualify for partnership?</h2>
+                <a href="#">Apply for partner today</a>
+            </div>
+            <div class="ctaAbout">
+                <p>
+                    Our community supports circular fashion and our members help tackle waste by bringing new life to pre-owned items. We want to be the preferred secondhand fashion destination and in order to be that we have to bring the best supply of designer pieces in front of our global community. You can join in and take part in our mission if you’re a boutique, brand, marketplace, store or stock supplier.
+                </p>
+            </div>
+        </section>
+        <section class="pricingSection">
+            <div class="pricingTitle">
+                <p>Benefits</p>
+                <h2>TVB for Business</h2>
+            </div>
+            <div class="cardsContainer">
+                <div class="card">
+                    <h2>SELF-SERVICE</h2>
+                    <h3>Free</h3>
+                    <ul>
+                        <li>Access to our global community</li>
+                        <li>Make your own unique Partner Listing Page</li>
+                        <li>Access to a marketplace with worldwide shipping</li>
+                        <li>Help from our Community Care frontline</li>
+                        <li>Access to monthly campaigns</li>
+                        <li>Access to automated product handling</li>
+                    </ul>
+                    <button>Start now</button>
+                </div>
+                <div class="card">
+                    <h2>EXTRA SERVICES</h2>
+                    <h3>Let’s talk</h3>
+                    <ul>
+                        <li>Access to our onboarding service</li>
+                        <li>Faster publication of items</li>
+                        <li>A personally designed Partner Listing Page</li>
+                        <li>Boutique exposed to our global community</li>
+                        <li>Featured in our Homepage</li>
+                        <li>Articles written about you on The Archive</li>
+                        <li>Insights, hotlists & marketplace counseling</li>
+                    </ul>
+                    <button>Get in touch</button>
+                </div>
+            </div>
+        </section>
+        
+        <section class="picAboutContainer">
+            <div class="picSection">
+                <img src="./assets/IMG_5980.JPG"/>  
+                <img src="./assets/tineandreaa  (2).jpg"/>
+            </div>
+            <div class="aboutContainer">
+                <h2>
+                        Here’s what you’ll gain
+                </h2>
+                <div>
+                    <h3>ACCESS TO OUR GROWING COMMUNITY</h3>
+                    <p>The Vintage Bar has various platforms and social channels – most notably our Instagram with more than 600k followers – and as a partner on The Vintage Bar your items will be included in the content we produce and showcase on these platforms.</p>
+                </div>
+                <div>
+                    <h3>GET BRANDING THROUGH OUR UNIVERSE</h3>
+                    <p>We use branding in order to create an inspiring universe for our community and to make secondhand shopping cool and luxurious. As a partner on the platform you’ll be included in this as we’ll promote your boutique and pieces in the same way we do our own.</p>
+                </div>
+                <div>
+                    <h3>CONNECTING LOCAL SUPPLY WITH GLOBAL DEMAND</h3>
+                    <p>Partnering with a marketplace with a global community that also provides worldwide shipping makes it possible for your boutique to expand and reach new target groups that previously weren’t able to shop with you.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function lockScroll() {
+            document.body.style.overflow = 'hidden';
+        }
     
+        function unlockScroll() {
+            document.body.style.overflow = 'auto';
+        }
+    
+        document.getElementById('burgerMenu').addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.style.display = 'flex';
+            lockScroll();
+            menu.classList.remove('hide');
+            menu.classList.add('show');
+        });
+    
+        document.getElementById('closeMenu').addEventListener('click', function() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.remove('show');
+            menu.classList.add('hide');
+            setTimeout(() => {
+                menu.style.display = 'none';
+                unlockScroll();
+            }, 300);
+        });
+    </script>
 </body>
 </html>
